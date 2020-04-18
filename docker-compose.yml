@@ -1,0 +1,13 @@
+version: "3"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: "Dockerfile"
+    command: python main.py
+    volumes:
+      - .:/app
+      # virtualenv の仮想環境が配置される場所を設定
+      - python-packages:/root/.local/share
+volumes:
+  python-packages:
