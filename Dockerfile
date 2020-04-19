@@ -13,6 +13,8 @@ ENV WORKDIR /app/
 
 WORKDIR ${WORKDIR}
 
+RUN mkdir -p /src
+
 COPY Pipfile Pipfile.lock ${WORKDIR}
 
 RUN pip install pipenv --no-cache-dir && \

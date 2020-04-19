@@ -238,3 +238,6 @@ fabric.properties
 *.iml
 out
 gen
+
+# ordinal_document
+src/*

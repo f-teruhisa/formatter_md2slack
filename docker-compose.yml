@@ -9,5 +9,6 @@ services:
       - .:/app
       # virtualenv の仮想環境が配置される場所を設定
       - python-packages:/root/.local/share
+      - ./src:/src
 volumes:
   python-packages:
