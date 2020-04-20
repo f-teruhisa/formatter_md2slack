@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 markdown = "*"
 beautifulsoup4 = "*"
+pylint = "*"
 
 [requires]
 python_version = "3.7.6"
