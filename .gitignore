@@ -240,4 +240,5 @@ out
 gen
 
 # ordinal_document
-src/*
+src/text.txt
+src/formatted_text.txt
