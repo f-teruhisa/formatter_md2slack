@@ -5,7 +5,7 @@
   </a>
 </p>
 
-> Markdown to format planetext and send to slack
+> Format plane-text and send to slack
 
 ## Install
 
