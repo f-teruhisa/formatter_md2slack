@@ -8,6 +8,8 @@ verify_ssl = true
 [packages]
 pylint = "*"
 requests = "*"
+python-dotenv = "*"
+json = "*"
 
 [requires]
 python_version = "3.7.6"
