@@ -40,10 +40,19 @@ def send_slack_notification(formated_text):
     webhook = os.environ.get("INCOMING_WEBHOOK")
     channel = os.environ.get("CHANNEL")
     user_name = os.environ.get("USER_NAME")
-    text = f"以下、今日の{user_name}のToDoです。よろしくお願いします。"
+    user_mention = os.environ.get("USER_MENTION")
+    text = f"今日の{user_name}のToDoです。よろしくお願いします。"
+
+    attachments =  [{
+        'author_name': f"<@{user_mention}>",
+        'text': formated_text,
+        'color': '#2eb886'
+    }]
+
     data=json.dumps({
         "text": text,
-        "channel": channel
+        "channel": channel,
+        "attachments": attachments
     })
     r = requests.post(webhook, data=data)
     print(r)
