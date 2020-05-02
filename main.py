@@ -1,8 +1,8 @@
 """Use to delete format markdown checkbox."""
-from dotenv import load_dotenv
 import json
 import os
 from os.path import join, dirname
+from dotenv import load_dotenv
 import requests
 
 def format_textfile(txtfile):
@@ -43,20 +43,20 @@ def send_slack_notification(formated_text):
     user_mention = os.environ.get("USER_MENTION")
     text = f"今日の{user_name}のToDoです。よろしくお願いします。"
 
-    attachments =  [{
+    attachments = [{
         'author_name': f"<@{user_mention}>",
         'text': formated_text,
         'color': '#2eb886'
     }]
 
-    data=json.dumps({
+    data = json.dumps({
         "text": text,
         "channel": channel,
         "attachments": attachments
     })
-    r = requests.post(webhook, data=data)
-    print(r)
-    print(r.text)
+    request = requests.post(webhook, data=data)
+    print(request)
+    print(request.text)
 
 print('Start to convert...')
 f = open('src/text.txt')
