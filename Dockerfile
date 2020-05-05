@@ -1,6 +1,6 @@
 FROM python:3.7.6-slim
 
-LABEL  maintainer "f-teruhisa <teru_fukumoto@outlook.jp>"
+LABEL maintainer "f-teruhisa <teru_fukumoto@outlook.jp>"
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
