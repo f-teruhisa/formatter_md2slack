@@ -2,9 +2,9 @@
 import json
 import os
 from os.path import join, dirname
+import time
 from dotenv import load_dotenv
 import requests
-import time
 
 def format_textfile(txtfile):
     """
