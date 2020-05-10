@@ -7,7 +7,7 @@ up:
 	docker-compose up
 
 lint:
-	docker-compose run app pylint main.py
+	docker-compose run app pylint main.py test_main.py
 
 test:
 	docker-compose run app pytest test_main.py
