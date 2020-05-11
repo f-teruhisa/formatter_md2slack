@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/f-teruhisa/formatter_md2slack/tree/master.svg?style=svg)](https://circleci.com/gh/f-teruhisa/formatter_md2slack/tree/master)
+
 <h1 align="center">Welcome to formatter_md2slack 👋</h1>
 <p>
   <a href="https://twitter.com/terry\\_i\\_" target="_blank">
@@ -5,7 +7,7 @@
   </a>
 </p>
 
-> Format plane-text and send to slack
+Format plane-text and send to slack
 
 ## Install
 
