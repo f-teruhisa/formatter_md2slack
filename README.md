@@ -2,8 +2,8 @@
 
 <h1 align="center">Welcome to formatter_md2slack 👋</h1>
 <p>
-  <a href="https://twitter.com/terry\\_i\\_" target="_blank">
-    <img alt="Twitter: terry\\_i\\_" src="https://img.shields.io/twitter/follow/terry\\_i\\_.svg?style=social" />
+  <a href="https://twitter.com/terry_i_" target="_blank">
+    <img alt="Twitter: terry_i_" src="https://img.shields.io/twitter/follow/terry_i_.svg?style=social" />
   </a>
 </p>
 
@@ -19,6 +19,20 @@ make init
 
 ```sh
 make
+```
+
+## Lint(Pylint)
+
+```sh
+make lint
+
+```
+
+## Test(pytest)
+
+```sh
+make test
+
 ```
 
 ## Author
