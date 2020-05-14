@@ -50,12 +50,12 @@ def send_slack_notification(formated_text):
     attachments = [{
         'author_name': f"<@{user_mention}>",
         'author_link': f"{author_link}",
-        'author_icon': f"{author_icon}",
+        'author_icon': author_icon,
         'title': '本日のToDo',
         'text': formated_text,
         'color': '#2eb886',
         'footer': f"Send from {user_mention}",
-        'footer_icon': f"{author_icon}",
+        'footer_icon': author_icon,
         'ts': str(now_ts)
     }]
 
