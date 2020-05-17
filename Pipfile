@@ -10,6 +10,7 @@ requests = "*"
 python-dotenv = "*"
 pylint = "*"
 pytest = "*"
+requests-mock = "*"
 
 [requires]
 python_version = "3.7"
