@@ -6,7 +6,11 @@ jobs:
     steps:
       - checkout
       - run:
-          command: |
-            sudo pip install pipenv
-            pipenv install
-            pipenv run pylint main.py
+          name: install Pipenv
+          command: sudo pip install pipenv
+      - run:
+          name: Run pipenv install
+          command: pipenv install
+      - run:
+          name: Run pylint
+          command: pipenv run pylint main.py
