@@ -5,6 +5,12 @@ jobs:
       - image: circleci/python:3.7.0
     steps:
       - checkout
+      - restore_cache:
+          key: v1-{{ .Branch }}-{{ checksum "Pipfile" }}
+      - save_cache:
+          key: v1-{{ .Branch }}-{{ checksum "Pipfile" }}
+          paths:
+            - Pipfile
       - run:
           name: install Pipenv
           command: sudo pip install pipenv
